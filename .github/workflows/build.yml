@@ -19,7 +19,7 @@ jobs:
           sudo apt update
           sudo apt install -y git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
           pip install buildozer cython==0.29.33
-      -       - name: Build APK
+      - name: Build APK
         run: |
           mkdir -p ~/.buildozer/android/platform/android-sdk/licenses
           echo "8933bad161af4178b1185d1a37fbf41ea526c55" > ~/.buildozer/android/platform/android-sdk/licenses/android-sdk-license
