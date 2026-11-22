@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     container:
-      image: kivy/buildozer:stable
+      image: kivy/buildozer:latest
     steps:
       - uses: actions/checkout@v4
       - name: Build APK
